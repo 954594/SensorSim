@@ -1,0 +1,26 @@
+{
+  "name": "node-red-contrib-sensor-sim",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "TmpHum": "TmpHum.js",
+      "Door": "Door.js",
+      "Illumi": "Illumi.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/954594/SensorSim.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/954594/SensorSim/issues"
+  },
+  "homepage": "https://github.com/954594/SensorSim#readme"
+}

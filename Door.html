@@ -1,0 +1,46 @@
+<script type="text/html" data-help-name="Door">
+    <p>開閉センサーの擬似データを作成します</p>
+</script>
+
+<script type="text/html" data-template-name="Door">
+
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name </label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+
+    <div class="form-row">
+        <label for="node-input-OriginalID"><i class="fa fa-tag"></i> OriginalID </label>
+        <input type="text" minlength="8" maxlength="8" id="node-input-OriginalID" placeholder="OriginalID">
+    </div>
+
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('Door',{
+        category: 'SensorSimu',
+        defaults: {
+            name: {required:false},
+            OriginalID: {required:true}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "publish.png",
+        allign: "right",
+        label: function() {
+            return this.name || "Door";
+        },
+        labelStyle: function() {
+            return "node_label_italic";
+        },
+        oneditprepare: function() {
+
+        },
+        oneditsave: function() {
+
+        },
+        oneditresize: function(size) {
+
+        }
+});
+</script>
